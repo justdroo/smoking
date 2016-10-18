@@ -1,0 +1,26 @@
+<h1>Congratulations!</h1>
+
+<h3><%= @user.name%>, you haven't smoked since <%= @l_s_formatted%>
+</h3>
+
+<h4>So if today is <%= @now_formatted %></h4>
+
+<h4>That means you haven't smoked in:</h4>
+
+<p><%= @seconds_since %> seconds</p>
+
+<h5>Which translates to</h5>
+<p><%= @days_since%></p>
+<br>
+
+<h5>Keep up the good work!</h5>
+
+<form action="/users/<%=@user.id%>/edit" method="post">
+  <input type="hidden" id="hidden" name="_method" value="patch">
+<label>I need to change the date I last smoked</label>
+  <br>
+    <input type="text" name="last_smoke" value="mm/dd/yyyy">
+
+    <input type="submit" value="change date">
+
+</form>

@@ -1,0 +1,23 @@
+<h1>Last Smoke</h1>
+
+<h2>Thanks for joining us!</h2>
+<h3>Fill out the form below to create a new account</h3>
+
+
+<form action="/users/new" method="post">
+  <label>Name:</label>
+    <input type="text" name="user[name]">
+      <br>
+      <br>
+
+  <label>Username: </label>
+    <input type="text" name="user[username]">
+      <br>
+      <br>
+
+  <label>Last Smoke: </label>
+    <input type="text" name="user[last_smoke]" value="mm/dd/yyyy">
+      <br>
+      <br>
+    <input type="submit" value="Create your account">
+</form>
