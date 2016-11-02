@@ -1,7 +1,7 @@
-# A sample Gemfile
+# Gem Source
 source "https://rubygems.org"
 
-# gem "rails"
+# gems
 
 gem 'sinatra'
 gem 'activerecord'
@@ -10,6 +10,7 @@ gem 'thin'
 gem 'require_all'
 gem 'activerecord', :require => 'active_record'
 gem 'sinatra-activerecord', :require => 'sinatra/activerecord'
+gem 'foaas-client', '~> 2.0'
 
 group :development do
   gem 'sqlite3'

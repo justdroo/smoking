@@ -57,10 +57,5 @@ class App < Sinatra::Base
     @user.save
     redirect "users/#{@user.id}"
   end
-  # post '/' do
-  #   @user = User.new(params)
-  #   # binding.pry
-  #   erb :days_since
-  # end
-
+#
 end
